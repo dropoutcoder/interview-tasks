@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29201.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task 1", "Task 1", "{62011A70-0219-4CDE-A2D9-D54D8E5B899B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropoutCoder.Memos.Evaluation.DuplicityFinder", "Task 1\DropoutCoder.Memos.Evaluation.DuplicityFinder\DropoutCoder.Memos.Evaluation.DuplicityFinder.csproj", "{7111E665-9EB8-4882-8FEC-2A5DEB80BAF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task 2", "Task 2", "{165EA651-F4C9-45DC-A6CB-1746FA97C17A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task 3", "Task 3", "{0498CF94-1A0B-4FAB-9556-1281D7B51FE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropoutCoder.Memos.Evaluation.EnterpriseHierarchyLookup", "Task 3\DropoutCoder.Memos.Evaluation.EnterpriseHierarchyLookup\DropoutCoder.Memos.Evaluation.EnterpriseHierarchyLookup.csproj", "{724235E7-B398-41FE-9AD7-8B2956B9A858}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropoutCoder.Memos.Evaluation.SwapiAccess", "Task 2\DropoutCoder.Memos.Evaluation.SwapiAccess\DropoutCoder.Memos.Evaluation.SwapiAccess.csproj", "{013689B3-F9E0-4C6A-9344-AEC0544D8D4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7111E665-9EB8-4882-8FEC-2A5DEB80BAF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7111E665-9EB8-4882-8FEC-2A5DEB80BAF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7111E665-9EB8-4882-8FEC-2A5DEB80BAF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7111E665-9EB8-4882-8FEC-2A5DEB80BAF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{724235E7-B398-41FE-9AD7-8B2956B9A858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{724235E7-B398-41FE-9AD7-8B2956B9A858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{724235E7-B398-41FE-9AD7-8B2956B9A858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{724235E7-B398-41FE-9AD7-8B2956B9A858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{013689B3-F9E0-4C6A-9344-AEC0544D8D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{013689B3-F9E0-4C6A-9344-AEC0544D8D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{013689B3-F9E0-4C6A-9344-AEC0544D8D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{013689B3-F9E0-4C6A-9344-AEC0544D8D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7111E665-9EB8-4882-8FEC-2A5DEB80BAF4} = {62011A70-0219-4CDE-A2D9-D54D8E5B899B}
+		{724235E7-B398-41FE-9AD7-8B2956B9A858} = {0498CF94-1A0B-4FAB-9556-1281D7B51FE3}
+		{013689B3-F9E0-4C6A-9344-AEC0544D8D4A} = {165EA651-F4C9-45DC-A6CB-1746FA97C17A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {349705CA-33E7-4F6D-AC5E-98F41E2D4A13}
+	EndGlobalSection
+EndGlobal
