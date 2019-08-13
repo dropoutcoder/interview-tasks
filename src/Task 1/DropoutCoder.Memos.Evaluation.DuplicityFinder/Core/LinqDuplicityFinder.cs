@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace DropoutCoder.Memos.Evaluation.DuplicityFinder {
+namespace DropoutCoder.Memos.Evaluation.DuplicityFinder.Core {
     public class LinqDuplicityFinder<T> : IDuplicityFinder<T> {
         public IEnumerable<T> Find(IEnumerable<T> collection) {
             // null check

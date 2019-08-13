@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace DropoutCoder.Memos.Evaluation.DuplicityFinder {
+namespace DropoutCoder.Memos.Evaluation.DuplicityFinder.Core {
     public interface IValueGenerator<T> {
         T Generate();
     }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DropoutCoder.Memos.Evaluation.DuplicityFinder {
+namespace DropoutCoder.Memos.Evaluation.DuplicityFinder.Core {
     public class ArrayInitializer<T> {
         private readonly IValueGenerator<T> _generator;
 
@@ -8,20 +8,18 @@ namespace DropoutCoder.Memos.Evaluation.DuplicityFinder {
             _generator = generator ?? throw new ArgumentNullException();
         }
 
-        public bool TryInitialize(ref T[] array) {
-            bool result = false;
+        public T[] Initialize(uint count) {
+            T[] array = new T[count];
 
             try {
                 for (int i = 0; i < array.Length; i++) {
                     array[i] = _generator.Generate();
                 }
-
-                result = true;
-            } catch(Exception e) {
-                throw new ApplicationException("We have a problem during array initialization, sir!", e);
+            } catch (Exception e) {
+                throw new ApplicationException("We encounter a problem during array initialization, sir!", e);
             }
 
-            return result;
+            return array;
         }
     }
 }
