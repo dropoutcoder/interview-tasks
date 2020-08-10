@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace DropoutCoder.CodingFun.DuplicityFinder.Core {
     public class LinqDuplicityFinder<T> : IDuplicityFinder<T> {
-        public IEnumerable<T> Find(IEnumerable<T> collection) {
+        public IEnumerable<T> Find(T[] collection) {
             // null check
             // size check
 

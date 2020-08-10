@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DropoutCoder.CodingFun.Ente
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DropoutCoder.CodingFun.SwapiAccess", "swapi-access\DropoutCoder.CodingFun.SwapiAccess\DropoutCoder.CodingFun.SwapiAccess.csproj", "{48E3B021-8155-4279-AF5A-8362AA0C52F5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmarks", "benchmarks", "{236138BB-9906-4074-9311-53954C331D9F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DropoutCoder.CodingFun.Benchmark", "benchmarks\DropoutCoder.CodingFun.Benchmark\DropoutCoder.CodingFun.Benchmark.csproj", "{AAA9E7A1-DE30-4E64-B544-3D6D9E5A895C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,10 @@ Global
 		{48E3B021-8155-4279-AF5A-8362AA0C52F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48E3B021-8155-4279-AF5A-8362AA0C52F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48E3B021-8155-4279-AF5A-8362AA0C52F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAA9E7A1-DE30-4E64-B544-3D6D9E5A895C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAA9E7A1-DE30-4E64-B544-3D6D9E5A895C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAA9E7A1-DE30-4E64-B544-3D6D9E5A895C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA9E7A1-DE30-4E64-B544-3D6D9E5A895C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +49,7 @@ Global
 		{7111E665-9EB8-4882-8FEC-2A5DEB80BAF4} = {62011A70-0219-4CDE-A2D9-D54D8E5B899B}
 		{1AFE7858-56B7-4755-A459-7A8849833C76} = {165EA651-F4C9-45DC-A6CB-1746FA97C17A}
 		{48E3B021-8155-4279-AF5A-8362AA0C52F5} = {0498CF94-1A0B-4FAB-9556-1281D7B51FE3}
+		{AAA9E7A1-DE30-4E64-B544-3D6D9E5A895C} = {236138BB-9906-4074-9311-53954C331D9F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {349705CA-33E7-4F6D-AC5E-98F41E2D4A13}
