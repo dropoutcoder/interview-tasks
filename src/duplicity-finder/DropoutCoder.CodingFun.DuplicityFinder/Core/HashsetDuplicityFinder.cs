@@ -1,24 +1,30 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
-namespace DropoutCoder.CodingFun.DuplicityFinder.Core {
-    public class HashsetDuplicityFinder<T> : IDuplicityFinder<T> {
-        private HashSet<T> _singles = new HashSet<T>();
-        private HashSet<T> _duplicates = new HashSet<T>();
-
-        public IEnumerable<T> Find(IEnumerable<T> collection) {
+namespace DropoutCoder.CodingFun.DuplicityFinder.Core
+{
+    public class HashsetDuplicityFinder<T> : IDuplicityFinder<T>
+    {
+        public IEnumerable<T> Find(IEnumerable<T> collection)
+        {
             // null check
             // size check
 
-            foreach (var item in collection) {
-                if (!_singles.Add(item)) {
-                    if (_duplicates.Add(item)) {
+            var size = collection.Count();
+
+            var singles = new HashSet<T>(size);
+            var _duplicates = new HashSet<T>(size / 2);
+
+            foreach (var item in collection)
+            {
+                if (!singles.Add(item))
+                {
+                    if (_duplicates.Add(item))
+                    {
                         yield return item;
                     }
                 }
             }
-
-            _singles.Clear();
-            _duplicates.Clear();
         }
     }
 }
