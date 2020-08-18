@@ -3,11 +3,11 @@ using System.Linq;
 
 namespace DropoutCoder.CodingFun.DuplicityFinder.Core {
     public class LinqDuplicityFinder<T> : IDuplicityFinder<T> {
-        public IEnumerable<T> Find(T[] collection) {
+        public IEnumerable<T> Find(T[] items) {
             // null check
             // size check
 
-            return collection
+            return items
                 .GroupBy(x => x)
                 .Where(g => g.Count() > 1)
                 .Select(x => x.Key);

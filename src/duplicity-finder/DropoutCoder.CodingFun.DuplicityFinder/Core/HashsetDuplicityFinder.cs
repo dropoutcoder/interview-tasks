@@ -5,21 +5,21 @@ namespace DropoutCoder.CodingFun.DuplicityFinder.Core
 {
     public class HashsetDuplicityFinder<T> : IDuplicityFinder<T>
     {
-        public IEnumerable<T> Find(T[] collection)
+        public IEnumerable<T> Find(T[] items)
         {
             // null check
             // size check
 
-            var size = collection.Count();
+            var size = items.Count();
 
             var singles = new HashSet<T>(size);
-            var _duplicates = new HashSet<T>(size / 2);
+            var duplicates = new HashSet<T>(size / 2);
 
-            foreach (var item in collection)
+            foreach (var item in items)
             {
                 if (!singles.Add(item))
                 {
-                    if (_duplicates.Add(item))
+                    if (duplicates.Add(item))
                     {
                         yield return item;
                     }

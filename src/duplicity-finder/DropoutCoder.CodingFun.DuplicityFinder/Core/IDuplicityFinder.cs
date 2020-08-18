@@ -2,6 +2,6 @@
 
 namespace DropoutCoder.CodingFun.DuplicityFinder.Core {
     public interface IDuplicityFinder<T> {
-        IEnumerable<T> Find(T[] collection);
+        IEnumerable<T> Find(T[] items);
     }
 }
