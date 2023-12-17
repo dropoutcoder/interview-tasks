@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\duplicity-finder\DropoutCoder.CodingFun.DuplicityFinder\DropoutCoder.CodingFun.DuplicityFinder.csproj" />
+    <ProjectReference Include="..\..\src\DropoutCoder.DuplicityFinder\DropoutCoder.DuplicityFinder.csproj" />
   </ItemGroup>
 
 </Project>
