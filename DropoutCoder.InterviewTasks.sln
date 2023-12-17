@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "memos", "memos", "{792C289B-A123-4647-BBA1-1C8EFDC8BF0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D6BBB0CD-08F9-496B-8D31-18E568E34068}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmarks", "benchmarks", "{2ADF1034-CB0E-402A-9BCC-1FA4B6B60CE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DropoutCoder.DuplicityFinder", "DropoutCoder.DuplicityFinder", "{C777DDF6-B163-4DFE-AB0A-C595D4CC89D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DropoutCoder.UssEnterpriseHierarchyLookup", "DropoutCoder.UssEnterpriseHierarchyLookup", "{4D5ABAE0-B133-46E6-9D76-CFC6314B30E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DropoutCoder.SwapiAccess", "DropoutCoder.SwapiAccess", "{D271007D-DAD1-45EC-9907-6BF4F10BE5E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DropoutCoder.DuplicityFinder", "memos\src\DropoutCoder.DuplicityFinder\DropoutCoder.DuplicityFinder.csproj", "{4C3E4DE4-0838-4871-B622-7C8313425650}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DropoutCoder.SwapiAccess", "memos\src\DropoutCoder.SwapiAccess\DropoutCoder.SwapiAccess.csproj", "{5F73FB5E-9437-4818-8025-0E48E2477C8B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DropoutCoder.UssEnterpriseHierarchyLookup", "memos\src\DropoutCoder.UssEnterpriseHierarchyLookup\DropoutCoder.UssEnterpriseHierarchyLookup.csproj", "{8765A70E-048B-48AB-AA03-940238904FD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DropoutCoder.DuplicityFinder.Benchmark", "DropoutCoder.DuplicityFinder.Benchmark", "{5FED9CEE-EA29-4B00-AE1D-4C49EC0CB8EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DropoutCoder.DuplicityFinder.Benchmark", "memos\benchmarks\DropoutCoder.DuplicityFinder.Benchmark\DropoutCoder.DuplicityFinder.Benchmark.csproj", "{A2FFBB46-404A-4C00-BB2B-6EBAE97A87C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C3E4DE4-0838-4871-B622-7C8313425650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C3E4DE4-0838-4871-B622-7C8313425650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C3E4DE4-0838-4871-B622-7C8313425650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C3E4DE4-0838-4871-B622-7C8313425650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F73FB5E-9437-4818-8025-0E48E2477C8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F73FB5E-9437-4818-8025-0E48E2477C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F73FB5E-9437-4818-8025-0E48E2477C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F73FB5E-9437-4818-8025-0E48E2477C8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8765A70E-048B-48AB-AA03-940238904FD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8765A70E-048B-48AB-AA03-940238904FD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8765A70E-048B-48AB-AA03-940238904FD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8765A70E-048B-48AB-AA03-940238904FD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2FFBB46-404A-4C00-BB2B-6EBAE97A87C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2FFBB46-404A-4C00-BB2B-6EBAE97A87C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2FFBB46-404A-4C00-BB2B-6EBAE97A87C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2FFBB46-404A-4C00-BB2B-6EBAE97A87C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D6BBB0CD-08F9-496B-8D31-18E568E34068} = {792C289B-A123-4647-BBA1-1C8EFDC8BF0E}
+		{2ADF1034-CB0E-402A-9BCC-1FA4B6B60CE2} = {792C289B-A123-4647-BBA1-1C8EFDC8BF0E}
+		{C777DDF6-B163-4DFE-AB0A-C595D4CC89D3} = {D6BBB0CD-08F9-496B-8D31-18E568E34068}
+		{4D5ABAE0-B133-46E6-9D76-CFC6314B30E7} = {D6BBB0CD-08F9-496B-8D31-18E568E34068}
+		{D271007D-DAD1-45EC-9907-6BF4F10BE5E0} = {D6BBB0CD-08F9-496B-8D31-18E568E34068}
+		{4C3E4DE4-0838-4871-B622-7C8313425650} = {C777DDF6-B163-4DFE-AB0A-C595D4CC89D3}
+		{5F73FB5E-9437-4818-8025-0E48E2477C8B} = {D271007D-DAD1-45EC-9907-6BF4F10BE5E0}
+		{8765A70E-048B-48AB-AA03-940238904FD6} = {4D5ABAE0-B133-46E6-9D76-CFC6314B30E7}
+		{5FED9CEE-EA29-4B00-AE1D-4C49EC0CB8EF} = {2ADF1034-CB0E-402A-9BCC-1FA4B6B60CE2}
+		{A2FFBB46-404A-4C00-BB2B-6EBAE97A87C4} = {5FED9CEE-EA29-4B00-AE1D-4C49EC0CB8EF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B456768-2E9D-4065-95E0-6EAA6C44E215}
+	EndGlobalSection
+EndGlobal
