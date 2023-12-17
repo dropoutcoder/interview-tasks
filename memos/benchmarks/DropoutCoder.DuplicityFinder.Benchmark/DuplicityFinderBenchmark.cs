@@ -18,7 +18,7 @@ namespace DropoutCoder.DuplicityFinder.Benchmark
         private IDuplicityFinder<int> _hashsetDuplicityFinder = new HashsetDuplicityFinder<int>();
         private IDuplicityFinder<int> _linqDuplicityFinder = new LinqDuplicityFinder<int>();
 
-        [Params(1000, 10000)]
+        [Params(1_000, 10_000, 100_000, 1_000_000)]
         public uint Count;
 
         private Consumer _consumer = new Consumer();
