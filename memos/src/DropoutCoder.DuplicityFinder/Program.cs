@@ -11,8 +11,9 @@ namespace DropoutCoder.DuplicityFinder
     {
         private static IValueGenerator<int> _generator = new Int32Generator(/*DateTime.Now.Millisecond*/);
         private static IEnumerable<IDuplicityFinder<int>> _finders = new IDuplicityFinder<int>[] {
+            new ForLoopDuplicityFinder<int>(),
+            new HashsetDuplicityFinder<int>(),
             new LinqDuplicityFinder<int>(),
-            new HashsetDuplicityFinder<int>()
         };
 
         static void Main(string[] args)
@@ -26,7 +27,7 @@ namespace DropoutCoder.DuplicityFinder
 
             if (!uint.TryParse(itemCountInput, out uint count) || !itemCountValidator.IsValid(count))
             {
-                Console.WriteLine($"Can you write positive integer, please? Number between {itemCountValidator.Min} and {itemCountValidator.Max}.");
+                Console.WriteLine($"Can you write positive integer, please? Number between {uint.MinValue + 2} and {itemCountValidator.Max}.");
                 goto ItemCountInput;
             }
         #endregion
@@ -57,7 +58,7 @@ namespace DropoutCoder.DuplicityFinder
             #region Running duplicity check
             try
             {
-                var finders = index == 0 ? _finders : _finders.Where((m, i) => i == index);
+                var finders = index == 0 ? _finders : _finders.Where((m, i) => i == index - 1);
 
                 var initializer = new ArrayInitializer<int>(_generator);
 
@@ -98,7 +99,7 @@ namespace DropoutCoder.DuplicityFinder
             }
             else if (restartInput.Key != ConsoleKey.N)
             {
-                Console.WriteLine("You really have a problems with letter, huh?");
+                Console.WriteLine("We didn't recognize the input, thus we are terminating the application...");
             }
             #endregion
         }

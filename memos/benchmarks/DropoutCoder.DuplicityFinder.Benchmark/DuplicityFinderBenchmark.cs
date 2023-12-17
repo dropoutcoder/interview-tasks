@@ -1,10 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Diagnostics.Windows.Configs;
+﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Engines;
-using BenchmarkDotNet.Jobs;
-using DropoutCoder.DuplicityFinder.Core;
 using DropoutCoder.DuplicityFinder.Core;
 
 namespace DropoutCoder.DuplicityFinder.Benchmark
@@ -15,6 +10,8 @@ namespace DropoutCoder.DuplicityFinder.Benchmark
         private int[] source;
 
         private static IValueGenerator<int> _generator = new Int32Generator();
+
+        private IDuplicityFinder<int> _forLoopDuplicityFinder = new ForLoopDuplicityFinder<int>();
         private IDuplicityFinder<int> _hashsetDuplicityFinder = new HashsetDuplicityFinder<int>();
         private IDuplicityFinder<int> _linqDuplicityFinder = new LinqDuplicityFinder<int>();
 
@@ -34,7 +31,7 @@ namespace DropoutCoder.DuplicityFinder.Benchmark
         [Benchmark]
         public void ForLoop()
         {
-            _hashsetDuplicityFinder.Find(source).Consume(_consumer);
+            _forLoopDuplicityFinder.Find(source).Consume(_consumer);
         }
 
         [Benchmark]
