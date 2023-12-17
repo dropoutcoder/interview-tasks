@@ -1,11 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace DropoutCoder.CodingFun.EnterpriseHierarchyLookup.Data {
-    public class MemoryContext {
+namespace DropoutCoder.UssEnterpriseHierarchyLookup.Data
+{
+    public class MemoryContext
+    {
         public IEnumerable<ICrewMember> CrewMembers { get; private set; }
 
-        public void Initialize() {
+        public void Initialize()
+        {
             CrewMembers = new List<ICrewMember>() {
                 new Subordinate {
                     Name = CrewNames.AlexanderRozhenko,
@@ -103,7 +106,8 @@ namespace DropoutCoder.CodingFun.EnterpriseHierarchyLookup.Data {
         }
     }
 
-    public class CrewNames {
+    public class CrewNames
+    {
         public static string AlexanderRozhenko = "Alexander Rozhenko";
         public static string JulianBashir = "Julian Bashir";
         public static string TashaYar = "Tasha Yar";
@@ -123,16 +127,20 @@ namespace DropoutCoder.CodingFun.EnterpriseHierarchyLookup.Data {
         public static string JeanLucPickard = "Jean Luc Pickard";
     }
 
-    public static class CrewMemberExtension {
-        public static ICrewMember GetByName(this IEnumerable<ICrewMember> source, string name) {
+    public static class CrewMemberExtension
+    {
+        public static ICrewMember GetByName(this IEnumerable<ICrewMember> source, string name)
+        {
             return source.SingleOrDefault(m => m.Name == name);
         }
 
-        public static ICommander GetCommander(this IEnumerable<ICrewMember> source, string name) {
+        public static ICommander GetCommander(this IEnumerable<ICrewMember> source, string name)
+        {
             return source.OfType<ICommander>().Single(m => m.Name == name);
         }
 
-        public static IEnumerable<ICrewMember> GetSubordinates(this IEnumerable<ICrewMember> source, string name) {
+        public static IEnumerable<ICrewMember> GetSubordinates(this IEnumerable<ICrewMember> source, string name)
+        {
             return source.OfType<ISubordinate>().Where(s => s.Commander.Invoke().Name == name);
         }
     }

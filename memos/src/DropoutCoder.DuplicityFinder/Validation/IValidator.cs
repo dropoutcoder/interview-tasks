@@ -1,5 +1,7 @@
-﻿namespace DropoutCoder.CodingFun.DuplicityFinder.Validation {
-    public interface IValidator<T> {
+﻿namespace DropoutCoder.DuplicityFinder.Validation
+{
+    public interface IValidator<T>
+    {
         bool IsValid(T value);
     }
 }

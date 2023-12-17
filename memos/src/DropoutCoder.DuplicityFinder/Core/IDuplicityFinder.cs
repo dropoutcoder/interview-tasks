@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 
-namespace DropoutCoder.CodingFun.DuplicityFinder.Core {
-    public interface IDuplicityFinder<T> {
+namespace DropoutCoder.DuplicityFinder.Core
+{
+    public interface IDuplicityFinder<T>
+    {
         IEnumerable<T> Find(T[] items);
     }
 }

@@ -4,9 +4,10 @@ using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Diagnostics.Windows.Configs;
 using BenchmarkDotNet.Engines;
 using BenchmarkDotNet.Jobs;
-using DropoutCoder.CodingFun.DuplicityFinder.Core;
+using DropoutCoder.DuplicityFinder.Core;
+using DropoutCoder.DuplicityFinder.Core;
 
-namespace DropoutCoder.CodingFun.Benchmark
+namespace DropoutCoder.DuplicityFinder.Benchmark
 {
     [MemoryDiagnoser]
     public class DuplicityFinderBenchmark
