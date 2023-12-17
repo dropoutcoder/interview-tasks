@@ -1,7 +1,7 @@
 ﻿using System;
 using BenchmarkDotNet.Running;
 
-namespace DropoutCoder.CodingFun.Benchmark
+namespace DropoutCoder.DuplicityFinder.Benchmark
 {
     class Program
     {

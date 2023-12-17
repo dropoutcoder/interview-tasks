@@ -1,21 +1,29 @@
 ﻿using System;
 
-namespace DropoutCoder.CodingFun.DuplicityFinder.Core {
-    public class ArrayInitializer<T> {
+namespace DropoutCoder.DuplicityFinder.Core
+{
+    public class ArrayInitializer<T>
+    {
         private readonly IValueGenerator<T> _generator;
 
-        public ArrayInitializer(IValueGenerator<T> generator) {
+        public ArrayInitializer(IValueGenerator<T> generator)
+        {
             _generator = generator ?? throw new ArgumentNullException();
         }
 
-        public T[] Initialize(uint count) {
+        public T[] Initialize(uint count)
+        {
             T[] array = new T[count];
 
-            try {
-                for (int i = 0; i < array.Length; i++) {
+            try
+            {
+                for (int i = 0; i < array.Length; i++)
+                {
                     array[i] = _generator.Generate();
                 }
-            } catch (Exception e) {
+            }
+            catch (Exception e)
+            {
                 throw new ApplicationException("We encounter a problem during array initialization, sir!", e);
             }
 

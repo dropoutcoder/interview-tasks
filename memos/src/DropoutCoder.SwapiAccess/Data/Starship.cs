@@ -3,92 +3,109 @@ using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace DropoutCoder.CodingFun.SwapiAccess.Data {
-    public class Starship : SwapiEntity {
+namespace DropoutCoder.SwapiAccess.Data
+{
+    public class Starship : SwapiEntity
+    {
         [JsonProperty("name")]
-        public string Name {
+        public string Name
+        {
             get;
             set;
         }
 
         [JsonProperty("model")]
-        public string Model {
+        public string Model
+        {
             get;
             set;
         }
 
         [JsonProperty("manufacturer")]
-        public string Manufacturer {
+        public string Manufacturer
+        {
             get;
             set;
         }
 
         [JsonProperty("cost_in_credits")]
-        public string Price {
+        public string Price
+        {
             get;
             set;
         }
 
         [JsonProperty("length")]
-        public string Length {
+        public string Length
+        {
             get;
             set;
         }
 
         [JsonProperty("max_atmosphering_speed")]
-        public string MaxAtmosphericSpeed {
+        public string MaxAtmosphericSpeed
+        {
             get;
             set;
         }
 
         [JsonProperty("crew")]
-        public string Crew {
+        public string Crew
+        {
             get;
             set;
         }
 
         [JsonProperty("passengers")]
-        public string Passengers {
+        public string Passengers
+        {
             get;
             set;
         }
 
         [JsonProperty("cargo_capacity")]
-        public string CargoCapacity {
+        public string CargoCapacity
+        {
             get;
             set;
         }
 
         [JsonProperty("consumables")]
-        public string Consumables {
+        public string Consumables
+        {
             get;
             set;
         }
 
         [JsonProperty("pilots")]
-        public IEnumerable<string> Pilots {
+        public IEnumerable<string> Pilots
+        {
             get; set;
         }
 
         [JsonProperty("films")]
-        public IEnumerable<string> Movies {
+        public IEnumerable<string> Movies
+        {
             get; set;
         }
 
         [JsonProperty("starship_class")]
-        public string Class {
+        public string Class
+        {
             get;
             set;
         }
 
         [JsonProperty("hyperdrive_rating")]
-        public string HyperdriveRating {
+        public string HyperdriveRating
+        {
             get;
             set;
         }
 
         [JsonProperty("MGLT")]
-        public string MaxMegaLightsSpeed {
+        public string MaxMegaLightsSpeed
+        {
             get;
             set;
         }

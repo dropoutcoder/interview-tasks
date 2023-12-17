@@ -1,9 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace DropoutCoder.CodingFun.DuplicityFinder.Core {
-    public class LinqDuplicityFinder<T> : IDuplicityFinder<T> {
-        public IEnumerable<T> Find(T[] items) {
+namespace DropoutCoder.DuplicityFinder.Core
+{
+    public class LinqDuplicityFinder<T> : IDuplicityFinder<T>
+    {
+        public IEnumerable<T> Find(T[] items)
+        {
             // null check
             // size check
 

@@ -1,9 +1,12 @@
 ﻿using System;
-using DropoutCoder.CodingFun.EnterpriseHierarchyLookup.Data;
+using DropoutCoder.UssEnterpriseHierarchyLookup.Data;
 
-namespace DropoutCoder.CodingFun.EnterpriseHierarchyLookup {
-    class Program {
-        static void Main(string[] args) {
+namespace DropoutCoder.UssEnterpriseHierarchyLookup
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
             var context = new MemoryContext();
             context.Initialize();
 
@@ -13,7 +16,8 @@ namespace DropoutCoder.CodingFun.EnterpriseHierarchyLookup {
 
             var result = lookup.Lookup(member, LookupDirection.Down | LookupDirection.Up);
 
-            foreach(var item in result) {
+            foreach (var item in result)
+            {
                 Console.WriteLine($"{item.Name} is a {item.Gender}");
             }
 

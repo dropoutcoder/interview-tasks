@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace DropoutCoder.CodingFun.DuplicityFinder.Core
+namespace DropoutCoder.DuplicityFinder.Core
 {
     public class HashsetDuplicityFinder<T> : IDuplicityFinder<T>
     {

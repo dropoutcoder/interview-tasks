@@ -1,14 +1,18 @@
 ﻿using System;
 
-namespace DropoutCoder.CodingFun.DuplicityFinder.Core {
-    public interface IValueGenerator<T> {
+namespace DropoutCoder.DuplicityFinder.Core
+{
+    public interface IValueGenerator<T>
+    {
         T Generate();
     }
 
-    public class Int32Generator : IValueGenerator<int> {
+    public class Int32Generator : IValueGenerator<int>
+    {
         private readonly Random _random;
 
-        public Int32Generator() {
+        public Int32Generator()
+        {
             _random = new Random();
         }
 
@@ -17,7 +21,8 @@ namespace DropoutCoder.CodingFun.DuplicityFinder.Core {
         //    _random = new Random(seed);
         //}
 
-        public int Generate() {
+        public int Generate()
+        {
             return _random.Next();
         }
     }

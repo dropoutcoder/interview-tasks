@@ -1,31 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
-
 using Newtonsoft.Json;
 
-namespace DropoutCoder.CodingFun.SwapiAccess.Data {
+namespace DropoutCoder.SwapiAccess.Data
+{
     public class Collection<T>
-        where T : SwapiEntity {
+        where T : SwapiEntity
+    {
         [JsonProperty("count")]
-        public int Count {
+        public int Count
+        {
             get;
             set;
         }
 
         [JsonProperty("next")]
-        public Uri Next {
+        public Uri Next
+        {
             get;
             set;
         }
 
         [JsonProperty("previous")]
-        public Uri Previous {
+        public Uri Previous
+        {
             get;
             set;
         }
 
         [JsonProperty("results")]
-        public IEnumerable<T> Results {
+        public IEnumerable<T> Results
+        {
             get;
             set;
         }
